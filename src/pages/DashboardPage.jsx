@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Card, Statistic, Table, Typography, message, Spin, Tag, DatePicker } from 'antd'; // 1. Importar DatePicker
+import { Row, Col, Card, Statistic, Table, Typography, message, Spin, Tag, DatePicker } from 'antd'; //  Importar DatePicker
 import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import apiClient from '../api/axiosConfig';
@@ -14,7 +14,7 @@ const DashboardPage = () => {
     const [despesasPorCategoria, setDespesasPorCategoria] = useState([]);
     const [loading, setLoading] = useState(true);
     const [allLancamentos, setAllLancamentos] = useState([]); // Guarda todos os lançamentos
-    const [selectedDate, setSelectedDate] = useState(dayjs()); // 2. Novo estado para a data
+    const [selectedDate, setSelectedDate] = useState(dayjs()); //  Novo estado para a data
 
     // Função que processa os dados, agora recebe a data como parâmetro
     const processData = (lancamentos, dataSelecionada) => {
@@ -121,7 +121,7 @@ const DashboardPage = () => {
                     <Title level={2}>Dashboard Financeiro</Title>
                 </Col>
                 <Col>
-                    {/* 3. Adiciona o seletor de mês aqui */}
+                    {/*  Adiciona o seletor de mês aqui */}
                     <DatePicker picker="month" onChange={handleDateChange} defaultValue={selectedDate} />
                 </Col>
             </Row>
