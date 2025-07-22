@@ -1,12 +1,34 @@
-# React + Vite
+# Onboarding (Back-end) - Synchro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+API desenvolvida para o sistema de controle de contas contábeis.
 
-Currently, two official plugins are available:
+O objetivo é permitir organizar contas através de um sistema intuitivo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+* Java 21
+* Spring Boot 3
+* Spring Data JPA / Hibernate
+* Maven
+* Banco de Dados: MySQL 8.0.33
 
-## Expanding the ESLint configuration
+## Como Executar a API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Pré-requisitos
+* Java instalado na versão usada.
+* Maven instalado na versão usada.
+* Uma instância do Mysql rodando.
+
+### Configuração
+1.  Clone este repositório
+2.  Navegue até a pasta do projeto.
+3.  Abra o arquivo: properties
+4.  Altere as seguintes propriedades com as credenciais do seu banco de dados local:
+    * `spring.datasource.url` 
+    * `spring.datasource.username`
+    * `spring.datasource.password`
+
+### Execução
+1.  Abra o projeto em sua IDE  e execute a classe principal da aplicação.
+2.  A API estará disponível em `http://localhost:8080`.
+
+#OBS: isso é só para o back end, para ver a aplicação completa tem que rodar juntamente com o front-end.
