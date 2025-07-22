@@ -1,34 +1,38 @@
-# Onboarding (Back-end) - Synchro
+# Onboarding - Synchro
 
-API desenvolvida para o sistema de controle de contas contábeis.
+Interface de usuário desenvolvida em react para aplicação de contas contabéis. A aplicação consome o Back-end que está em outro repositório público.
 
-O objetivo é permitir organizar contas através de um sistema intuitivo.
+sistema é basicamente um CRUD que auxilia registros financeiros.
 
 ## Tecnologias Utilizadas
-* Java 21
-* Spring Boot 3
-* Spring Data JPA / Hibernate
-* Maven
-* Banco de Dados: MySQL 8.0.33
+* React
+* Vite
+* Ant Design para componentes de UI 
+* Axios para comunicação com a API
+* Rechart para gráficos
+* React Router DOM para navegação
 
-## Como Executar a API
+## Como Executar a Aplicação
 
 ### Pré-requisitos
-* Java instalado na versão usada.
-* Maven instalado na versão usada.
-* Uma instância do Mysql rodando.
-
-### Configuração
-1.  Clone este repositório
-2.  Navegue até a pasta do projeto.
-3.  Abra o arquivo: properties
-4.  Altere as seguintes propriedades com as credenciais do seu banco de dados local:
-    * `spring.datasource.url` 
-    * `spring.datasource.username`
-    * `spring.datasource.password`
+* Node.js 22.17.1 instalado.
+* A API precisa estar rodando em `http://localhost:8080`.
 
 ### Execução
-1.  Abra o projeto em sua IDE  e execute a classe principal da aplicação.
-2.  A API estará disponível em `http://localhost:8080`.
+1.  Clone este repositório.
+2.  Navegue até a pasta do projeto no terminal:
+    ```bash
+    cd contas-contabéis-frontend
+    ```
+3.  Instale as dependências do projeto:
+    ```bash
+    npm install
+    ```
+4.  Inicie o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
+5.  Abra seu navegador e acesse `http://localhost:5173`.
 
-#OBS: isso é só para o back end, para ver a aplicação completa tem que rodar juntamente com o front-end.
+
+
